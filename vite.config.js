@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+ codex/review-and-fix-github-repo-for-railway-deployment-h13fbo
   server: {
     // Railway hostnames are dynamic; allow external hosts for platform routing.
     allowedHosts: true,
@@ -11,4 +12,6 @@ export default defineConfig({
     // Railway hostnames are dynamic; allow external hosts for platform routing.
     allowedHosts: true,
   },
+
+ main
 });
