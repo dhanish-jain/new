@@ -3,8 +3,12 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    // Railway hostnames are dynamic; allow external hosts for platform routing.
+    allowedHosts: true,
+  },
   preview: {
-    // Allow Railway-generated deployment domains during `vite preview`.
-    allowedHosts: [".up.railway.app"],
+    // Railway hostnames are dynamic; allow external hosts for platform routing.
+    allowedHosts: true,
   },
 });
