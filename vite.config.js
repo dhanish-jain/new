@@ -3,5 +3,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/amfi-portfolio-react/",
+  preview: {
+    // Allow Railway-generated deployment domains during `vite preview`.
+    allowedHosts: [".up.railway.app"],
+  },
 });
